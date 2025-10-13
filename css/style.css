@@ -1,0 +1,27 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #EAD7C7;
+}
+
+header {
+    background: #4D471E;
+    color: white;
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo {
+    float: left;
+}
+
+header ul {
+    float: right;
+}
+
+header .menu-toggle {
+    display: none;
+}
