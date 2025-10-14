@@ -1,12 +1,26 @@
+:root {
+    --orange: #E56C4B;
+    --purple: #C6ABD4;
+    --yellow: #F2B256;
+    --drk-blue: #31446F;
+    --grey: #B2B6C1;
+    --green: #939279;
+    --cream: #E2E1DC;
+    --black: #212121;
+}
+
+* {
+    box-sizing: border-box; /* removes the extra height that is given to the h1 element in the header */
+}
+
 body {
     padding: 0px;
     margin: 0px;
-    background: #EAD7C7;
+    background: var(--cream);
 }
 
 header {
-    background: #4D471E;
-    color: white;
+    background: var(--green);
     height: 66px;
 }
 
@@ -16,6 +30,16 @@ header * {
 
 header .logo {
     float: left;
+    height: inherit; /* tells the header .logo dive to use the same height as the header element */
+    margin-left: 2em;
+}
+
+header.logo-text {
+    margin: 8px;
+}
+
+header .logo-text span {
+    color: var(--black);
 }
 
 header ul {
