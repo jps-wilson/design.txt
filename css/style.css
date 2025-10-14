@@ -5,6 +5,7 @@
     --drk-blue: #31446F;
     --grey: #B2B6C1;
     --green: #939279;
+    --green2: #7a7a64;
     --cream: #E2E1DC;
     --black: #212121;
     --sm: "Space Mono", monospace;
@@ -60,6 +61,12 @@ header ul li a {
     display: block;
     padding: 21px;
     font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: var(--green2);
+    transition: 0.5s;
 }
 
 header .menu-toggle {
