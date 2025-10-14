@@ -20,11 +20,11 @@ header {
     background: var(--green);
     height: 68px;
 }
-
+/* applies to all the nav bar elements */
 header * {
     color: white;
 }
-
+/* styling for the logo in the header  */
 header .logo {
     float: left;
     height: inherit; /* tells the header .logo dive to use the same height as the header element */
@@ -35,10 +35,12 @@ header.logo-text {
     margin: 8px;
 }
 
+/* adds styling to the 'design' in logo */
 header .logo-text span {
     color: var(--yellow);
 }
 
+/* makes sure that the header is at the very top of the page */
 header ul {
     float: right;
     margin: 0px;
@@ -52,11 +54,12 @@ body {
     font-family: var(--sm);
 }
 
+/* positions the nav bar links horizontally */
 header ul li {
     float: left;
     position: relative;
 }
-
+/* hides the dropdown menu for 'about' */
 header ul li ul {
     position: absolute;
     top: 68px;
@@ -65,24 +68,30 @@ header ul li ul {
     display: none;
 }
 
+/* makes the dropdown menu show when you hover and aligns it */
 header ul li:hover ul {
     display: block;
 }
 
+/* makes the drop down items stack horizontally and the same width */
 header ul li ul li {
     width: 100%;
 }
 
+/* styling for the dropdown under 'about' */
 header ul li ul li a {
     padding: 10px;
     color: var(--black);
     background-color: white;
 }
 
+/* changes the background and text color when hovering over DD menu */
 header ul li ul li a:hover {
-    background: var(--grey);
+    background: var(--green2);
+    color: white;
 }
 
+/* applies spacing and formatting to the nav */
 header ul li a {
     display: block;
     padding: 21px;
@@ -90,12 +99,14 @@ header ul li a {
     text-decoration: none;
 }
 
+/* styling for when you mouse-over the nav elements */
 header ul li a:hover {
     background: var(--green2);
     transition: 0.5s;
     text-decoration: underline;
 }
 
+/* hides menu when not using small screen */
 header .menu-toggle {
     display: none;
 }
