@@ -111,6 +111,9 @@ header .menu-toggle {
         max-height: 0px;
         overflow: hidden;
     }
+    .showing {
+        max-height: 100em;
+    }
     header ul li {
         width: 100%;
     }
@@ -124,6 +127,9 @@ header .menu-toggle {
         background: var(--green);
         color: white;
         padding-left: 50px;
+    }
+    header ul li ul li a:hover {
+        background: var(--green2);
     }
     header .menu-toggle {
         display: block;
