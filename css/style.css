@@ -7,6 +7,7 @@
     --green: #939279;
     --cream: #E2E1DC;
     --black: #212121;
+    --sm: "Space Mono", monospace;
 }
 
 * {
@@ -17,6 +18,7 @@ body {
     padding: 0px;
     margin: 0px;
     background: var(--cream);
+    font-family: var(--sm);
 }
 
 header {
@@ -39,11 +41,25 @@ header.logo-text {
 }
 
 header .logo-text span {
-    color: var(--black);
+    color: var(--yellow);
 }
 
 header ul {
     float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border: 1px solid red;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
 }
 
 header .menu-toggle {
